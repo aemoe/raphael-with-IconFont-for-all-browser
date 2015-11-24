@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+        <title>Make Icons By Raphael</title>
+        <style media="screen">
+            *
+            {
+                margin: 0;
+                padding:0;
+            }
+            body
+            {
+                font-family: "微软雅黑";
+            }          
+            #icon_wrapper
+            {
+                width:1000px;
+            }
+            #icon_list {
+                width: 650px;
+                float: left;
+            }
+            #icon_preview
+            {
+                width:350px;
+                float: left;
+            }            
+            #path
+            {
+                width: 100%;
+                border: none;
+                height: 200px;
+                background-color: #333;
+                color: #fff;
+                padding: 10px;
+            }
+            #preview {
+                width: 100%;
+                padding: 10px;
+                height: 300px;
+            }
+            /*SVG Icon Css*/
+            .svg_icon
+            {
+               display: inline-block;
+               *display:inline;
+               *zoom:1;
+            }
+
+        </style>
+        <script src="res/plugin/raphael/raphael.js"></script>
+        <script src="res/iconJS/icons.js"></script>
+    </head>
+    <body>
+        <div id="icon_wrapper">
+            <div id="icon_list">
+                <i class="svg_icon" data-icon="cat" icon-width = "32"  icon-height = "32"  icon-offsetx = "0"  icon-offsety = "0"   icon-fill="#333" icon-stroke="none"></i>
+                <i class="svg_icon" data-icon="upload" icon-width = "32"  icon-height = "32"  icon-offsetx = "0"  icon-offsety = "0"   icon-fill="#333" icon-stroke="none"></i>
+                <i class="svg_icon" data-icon="web"  icon-width = "32"  icon-height = "32"  icon-offsetx = "0"  icon-offsety = "0"  icon-fill="#333" icon-stroke="none"></i>
+            </div>
+            <div id="icon_preview">
+                <div>SVG Code / SVG 路径代码</div>
+                <textarea id="path"></textarea>
+                <div>SVG Icon PreView / SVG 图标预览</div>
+                <div id="preview"></div>
+            </div>
+        </div>     
+    </body>
+</html>
